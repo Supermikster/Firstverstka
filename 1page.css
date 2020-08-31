@@ -17,7 +17,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
     vertical-align: baseline;
-    color: black;
+    color: #656565;
     text-decoration: none;
 
 }
@@ -34,6 +34,8 @@ html {
 body {
     line-height: 1;
     overflow-x: hidden;
+    height: 1024px;
+    background: #ededed;
 }
 
 ol, ul {
@@ -49,6 +51,7 @@ q:before, q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -58,19 +61,27 @@ table {
 div#escape {
     display: inline-block;
     margin-left: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
 }
 
 div#sayHello {
     display: inline-block;
-    margin-left: 125px;
+    margin-left: 92px;
+    text-transform: uppercase;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16.45px;
 }
 
 div#mainNav {
     display: inline-block;
+    text-transform: uppercase;
     /* position: relative; */
     margin-left: 530px;
     /* height: 40px; */
     padding-top: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16.45px;
 }
 
 div#main {
@@ -78,36 +89,36 @@ div#main {
     margin-left: 210px;
     font-size: 35px;
     position: absolute;
+    width: 257px;
+    height: 33px;
+    background-image: url(TheElderScrolls_03.png);
 }
 
 .footer {
     position: relative;
-    height: 46px;
+    height: 70px;
     bottom: 0;
-    /* top: 0; */
-    /* left: 0; */
-    /* overflow: auto; */
-    /* top: 50%; */
     left: 16%;
-    /* font-size: smaller; */
     right: 16%;
-    /* margin: -125px 0 0 -125px; */
     background-color: black;
     color: white;
-    /* display: inline-block; */
-    margin-top: 21px;
+    margin-top: 35px;
     margin-left: 154px;
-    width: 1000px;
+    width: 1024px;
     padding-top: 5px;
     padding-bottom: 5px;
     box-shadow: inset 0px 3px 4px 0px rgb(93 85 85);
+    text-transform: uppercase;
 }
 
 div#footer {
     margin-left: 75px;
     display: inline-block;
-    font-size: 11px;
+    font-size: 12px;
     color: white;
+    font-family: none;
+    /* padding-top: 3px; */
+    line-height: 1.5;
 }
 
 header {
@@ -130,33 +141,51 @@ div#secNav {
     display: inline-block;
 }
 
+
 select#heroChoise {
     border-radius: 5px;
     padding: 5px;
+    content: "▼";
     position: relative;
     border: none;
-    margin-left: 453px;
+    margin-left: 447px;
     top: -3px;
     box-shadow: 1px 4px 5px 0px rgba(0,0,0,0.2);
     font-size: 11px;
-    padding-left: 18px;
-    width: 256px;
+    padding-left: 7px;
+    width: 281px;
+    text-transform: uppercase;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    height: 30px;
+    background: #f1f1f1;
+    color: #656565;
 }
 
 select#siteSelect {
     border-radius: 5px;
+    /* color: #656565; */
+    padding-left: -2px;
     padding: 5px;
     position: relative;
     border: none;
-    margin-left: 220px;
+    padding-left: 10px;
+    margin-left: 210px;
     box-shadow: 1px 4px 5px 0px rgba(0,0,0,0.2);
     top: -3px;
     font-size: 11px;
+    text-transform: uppercase;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 239px;
+    height: 30px;
+    background: #f1f1f1;
+    color: #656565;
+    /* content: open-quote; */
 }
 
 div#mainBord {
     /* padding: 8px; */
     height: 35px;
+    background: #f1f1f1;
 }
 
 /*-------------------------*/
@@ -164,7 +193,7 @@ div#mainBord {
 div#mainlog {
     position: relative;
     display: inline-block;
-    width: 1000px;
+    width: 1024px;
     top: 35px;
     left: 27%;
     right: 16%;
@@ -172,23 +201,29 @@ div#mainlog {
 }
 
 div#slider {
-    height: 220px;
+    height: 248px;
+    width: 1024px;
 }
 
 div#newsSliderText {
-    background-image: url(back.png);
+    background-image: url(Slider_img.png);
     height: 100%;
 }
 
 div#sliderText {
     position: relative;
-    left: 50%;
+    left: 55%;
+    height: 156px;
     top: 23%;
-    /* color: white; */
+    width: 495px;
+    font-size: 12px;
+    /* line-height: 0.5; */
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 span#mainSliderText {
     color: white;
+    font-size: 12px;
 }
 
 /*-------------------------*/
@@ -196,92 +231,110 @@ div#switch {
     /* position: absolute; */
     position: relative;
     left: 0;
-    bottom: -31px;
+    bottom: -55px;
     text-align: center;
     /* width: 100%; */
-    width: 895px;
+    width: 754px;
 }
   
 label#firstslide {
     display: inline-block;
-    width: 4px;
-    height: 4px;
+    width: 13px;
+    height: 13px;
     cursor: pointer;
     margin: 0 5px;
     box-shadow: 0 0 2px 0 rgba(0, 0, 0, .8);
     border-radius: 50%;
-    border: 4px solid #2f363c;
-    background-color: #2f363c;
+    border: 4px solid #01181c;
+    background-color: #01181c;
+    opacity: 0.5;
 }
 
 label#secslide {
     display: inline-block;
-    width: 4px;
-    height: 4px;
+    width: 13px;
+    height: 13px;
     cursor: pointer;
     margin: 0 5px;
     box-shadow: 0 0 2px 0 rgba(0, 0, 0, .8);
     border-radius: 50%;
-    border: 4px solid #2f363c;
-    background-color: #2f363c;
+    border: 4px solid #01181c;
+    background-color: #01181c;
+    opacity: 0.5;
 }
 
 label#thirdslide {
     display: inline-block;
-    width: 4px;
-    height: 4px;
+    width: 13px;
+    height: 13px;
     cursor: pointer;
     margin: 0 5px;
     box-shadow: 0 0 2px 0 rgba(0, 0, 0, .8);
     border-radius: 50%;
     border: 4px solid #ffffff;
     background-color: #fefeff;
+    opacity: 0.9;
 }
 
 div#newstab {
     display: inline-block;
-    width: 708px;
-    font-size: 20px;
-    padding: 10px;
+    width: 720px;
+    font-size: 23px;
+    padding: 15px;
     border: 1px solid grey;
     margin-top: 20px;
     margin-left: 3px;
     padding-left: 26px;
     box-shadow: 2px 0px 5px rgba(0,0,0,0.3);
+    text-transform: uppercase;
+    /* height: 48px; */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* color: #656565; */
 }
 
 input#button {
     width: 54px;
     margin-left: -3px;
-    height: 22px;
-    box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+    height: 26px;
+    /* box-shadow: 1px 1px 5px rgba(0,0,0,0.5); */
     border-style: none;
-    background: white;
+    border: 1px solid grey;
+    background: #e7e7e7;
+    color: #656565;
 }
 
 input#placeholder {
     width: 160px;
     margin-left: 5px;
-    box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
-    padding-left: 10px;
+    box-shadow: inset 1px 1px 5px rgba(0,0,0,0.5);
+    padding-left: 11px;
     border-style: none;
-    height: 20px;
+    border: 1px solid grey;
+    font-size: 12px;
+    /* padding-top: 9px; */
+    height: 22px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #656565;
+    background-color: #e7e7e7;
+    opacity: 0.5;
 }
 
 span#siteSearch {
     font-size: 24px;
-    padding: 5px;
+    padding: 3px;
     /* margin-bottom: 0px; */
     /* position: relative; */
-}
-
-div#news {
-    display: inline-block;
+    color: #7e7e59;
 }
 
 div#mainNews {
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
-    height: 600px;
+    height: 679px;
+}
+
+div#searchArea {
+    opacity: 0.5;
+    margin-top: 6px;
 }
 
 div#search {
@@ -289,26 +342,33 @@ div#search {
     position: absolute;
     margin-top: 20px;
     border: 1px solid grey;
-    height: 76px;
+    height: 83px;
     width: 241px;
-    font-size: 23px;
-    margin-left: 5px;
+    font-size: 24px;
+    margin-left: 7px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* color: #656565; */
 }
 
 div#siteSearchText {
-    font-size: 23px;
-    padding-top: 10px;
-    padding-left: 10px;
+    font-size: 24px;
+    padding-top: 11px;
+    padding-left: 13px;
+    color: #656565;
 }
 
 div#news {
     display: inline-block;
     padding: 3px;
-    padding-left: 12px;
+    padding-left: 13px;
+    padding-top: 12px;
     border: 1px solid grey;
     margin-left: 7px;
-    width: 720px;
-    margin-top: 3px;
+    width: 737px;
+    height: 155px;
+    margin-top: 6px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
 }
 
 div#banner {
@@ -319,34 +379,40 @@ div#banner {
     /* padding-right: 107px; */
     padding-top: 85px;
     /* padding-bottom: 60px; */
-    margin-top: 22px;
+    margin-top: 32px;
     border: 1px solid grey;
-    font-size: 30px;
+    font-size: 33px;
     text-align: center;
     margin-left: -1px;
+    font-family: "Times New Roman", Times, serif;
+    /* color: #7e7e59; */
 }
 
 strong {
     font-weight: 900;
     font-size: 18px;
-    color: #77601e;
+    /* color: #77601e; */
+    color: #7e7e59;
 }
 
 b {
-    font-weight: 900;
+    font-weight: 500;
     /* color: #7b2e00; */
-    color: #77601e;
+    /* color: #77601e; */
+    text-transform: uppercase;
+    color: #7e7e59;
 }
 
 p {
-    padding-top: 5px;
+    padding-top: 12px;
+    font-family: "Times New Roman", Times, serif;
 }
 
 div#pages {
-    margin-top: 15px;
+    margin-top: 13px;
     margin-bottom: 20px;
     display: inline-block;
-    width: 401px;
+    width: 408px;
     float: right;
 }
 
@@ -357,6 +423,7 @@ a#back {
     padding-top: 2px;
     padding-bottom: 2px;
     margin-right: 5px;
+    color: #bbbbbb;
 }
 
 a#next {
@@ -374,6 +441,7 @@ a#firsp {
     padding-right: 6px;
     padding-top: 2px;
     padding-bottom: 2px;
+    color: #bbbbbb;
 }
 
 a#secp {
@@ -399,15 +467,30 @@ a#thirdp {
     padding-top: 2px;
     padding-bottom: 2px;
     background: #8b8c51;
+    color: #eadada;
 }
 
-span#mainSliderText {
-    color: white;
-    font-size: 15px;
-}
 
 b#lorem {
     font-size: 18px;
     font-weight: 900;
     color: #f9f2e4;
+}
+
+.footer_img {
+    background-image: url(Footer_img.png);
+    height: 100px;
+    width: 56px;
+    position: absolute;
+    display: inline-block;
+    margin-top: -48px;
+    margin-left: 8px;
+}
+
+span#news {
+    color: #656565;
+}
+
+span.banner {
+    color: #7e7e59;
 }
