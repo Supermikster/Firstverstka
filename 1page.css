@@ -98,12 +98,12 @@ div#main {
     position: relative;
     height: 70px;
     bottom: 0;
-    left: 16%;
+    left: 1%;
     right: 16%;
     background-color: black;
     color: white;
     margin-top: 35px;
-    margin-left: 154px;
+    margin-left: 155px;
     width: 1024px;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -195,7 +195,7 @@ div#mainlog {
     display: inline-block;
     width: 1024px;
     top: 35px;
-    left: 27%;
+    left: 12%;
     right: 16%;
     margin-left: 6px;
 }
@@ -330,6 +330,7 @@ span#siteSearch {
 div#mainNews {
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
     height: 679px;
+    background: #f1f1f1;
 }
 
 div#searchArea {
