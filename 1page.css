@@ -33,9 +33,13 @@ html {
 
 body {
     line-height: 1;
-    overflow-x: hidden;
-    height: 1024px;
+    /*overflow-x: hidden;*/
+    /* height: 1024px; */
+    width: 100%;
+    height: 100%;
     background: #ededed;
+    display: flex;
+    flex-direction: column;
 }
 
 ol, ul {
@@ -67,7 +71,7 @@ div#escape {
 
 div#sayHello {
     display: inline-block;
-    margin-left: 88px;
+    margin-left: 79px;
     text-transform: uppercase;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 16.45px;
@@ -77,7 +81,7 @@ div#mainNav {
     display: inline-block;
     text-transform: uppercase;
     /* position: relative; */
-    margin-left: 530px;
+    margin-left: 350px;
     /* height: 40px; */
     padding-top: 10px;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -86,29 +90,32 @@ div#mainNav {
 
 div#main {
     display: inline-block;
-    margin-left: 210px;
+    margin-left: 4px;
     font-size: 35px;
     position: absolute;
     width: 257px;
     height: 33px;
     background-image: url(TheElderScrolls_03.png);
+    padding-left: -1px;
 }
 
 .footer {
     position: relative;
-    height: 70px;
+    height: auto;
     bottom: 0;
-    left: 1%;
-    right: 16%;
+    /* left: 1%; */
+    /* right: 16%; */
     background-color: black;
     color: white;
     margin-top: 35px;
-    margin-left: 155px;
+    /* margin-left: 155px; */
     width: 1024px;
     padding-top: 5px;
     padding-bottom: 5px;
     box-shadow: inset 0px 3px 4px 0px rgb(93 85 85);
     text-transform: uppercase;
+    margin: -28px auto 0;
+    flex-shrink: 0;
 }
 
 div#footer {
@@ -122,19 +129,26 @@ div#footer {
 }
 
 header {
-    position: fixed;
+    position: relative;
+    display: inline-block;
     top: 0;
-    width: 100%;
+    width: auto;
     /* border-bottom: grey; */
     box-shadow: grey;
     z-index: 9999;
+    margin: 0 auto;
 }
 
 div#mainBord {
     box-shadow: black;
     /* border-bottom: 2px solid black; */
     box-shadow: 0 0 10 0 gray;
-    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    box-shadow: 0 0 5px rgba(0,0,0,0.5); 
+    height: 35px;
+    background: #f1f1f1;
+    padding-left: 188px;
+    padding-right: 189px;
+    
 }
 
 div#secNav {
@@ -204,12 +218,17 @@ div#mainBord {
 
 div#mainlog {
     position: relative;
-    display: inline-block;
+    /* display: inline-block; */
     width: 1024px;
-    top: 35px;
-    left: 12%;
-    right: 16%;
-    margin-left: 6px;
+    top: -28px;
+    /* left: 12%; */
+    /* right: 16%; */
+    /* margin-left: 6px; */
+    margin: 0 auto;
+    min-height: 100%;
+    height: auto !important;
+    /* padding: 0 0 387px; */
+    flex: 1 0 auto;
 }
 
 div#slider {
@@ -241,11 +260,11 @@ span#mainSliderText {
 div#switch {
     /* position: absolute; */
     position: relative;
-    left: 0;
+    /* left: 0; */
     bottom: -55px;
-    text-align: center;
+    text-align: right;
     /* width: 100%; */
-    width: 754px;
+    width: 425px;
 }
   
 label#firstslide {
@@ -288,7 +307,7 @@ label#thirdslide {
 }
 
 div#newstab {
-    display: inline-block;
+    /* display: inline-block; */
     width: 720px;
     font-size: 23px;
     padding: 15px;
@@ -301,6 +320,8 @@ div#newstab {
     /* height: 48px; */
     font-family: Georgia, 'Times New Roman', Times, serif;
     /* color: #656565; */
+    float: left;
+    position: relative;
 }
 
 input#button {
@@ -339,9 +360,14 @@ span#siteSearch {
 }
 
 div#mainNews {
+    float: left;
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
-    height: 679px;
+    /* height: 679px; */
     background: #f1f1f1;
+    /*min-height: 100%;*/
+    height: auto !important;
+    padding: 0 0 61px;
+    position: relative;
 }
 
 div#searchArea {
@@ -351,7 +377,7 @@ div#searchArea {
 
 div#search {
     display: inline-block;
-    position: absolute;
+    /* position: absolute; */
     margin-top: 20px;
     border: 1px solid grey;
     height: 83px;
@@ -360,6 +386,7 @@ div#search {
     margin-left: 7px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     /* color: #656565; */
+    position: relative;
 }
 
 div#siteSearchText {
@@ -370,7 +397,7 @@ div#siteSearchText {
 }
 
 div#news {
-    display: inline-block;
+    /* display: inline-block; */
     padding: 3px;
     padding-left: 13px;
     padding-top: 12px;
@@ -381,6 +408,8 @@ div#news {
     margin-top: 6px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 14px;
+    float: left;
+    position: relative;
 }
 
 div#banner {
@@ -423,9 +452,10 @@ p {
 div#pages {
     margin-top: 13px;
     margin-bottom: 20px;
-    display: inline-block;
+    /* display: inline-block; */
     width: 408px;
     float: right;
+    position: relative;
 }
 
 a#back {
@@ -515,12 +545,12 @@ span.banner {
     border-radius: 5px;
     width: 239px;
     margin-left: 10p;
-    margin-left: 210px;
+    margin-left: 189px;
 }
 
 .select2 {
     display: inline-block;
-    margin-left: 447px;
+    margin-left: 465px;
     position: relative;
     top: -3px;
     border-radius: 5px;
@@ -530,3 +560,17 @@ span.banner {
     background: #f1f1f1;
 }
 
+div#news2 {
+    /* display: inline-block; */
+    padding: 3px;
+    padding-left: 13px;
+    padding-top: 12px;
+    border: 1px solid grey;
+    margin-left: 7px;
+    width: 737px;
+    height: 155px;
+    margin-top: 6px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    float: left;
+}
