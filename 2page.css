@@ -427,6 +427,7 @@ header {
     height: 12px;
     width: 12px;
     background: #039203;
+    cursor: pointer;
 }
 
 .minus-container {
@@ -436,6 +437,7 @@ header {
     height: 12px;
     width: 12px;
     background: #f50f07;
+    cursor: pointer;
 }
 
 .dragonborn-container {
